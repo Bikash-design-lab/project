@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Create hover box</title>
+    <style>
+        #parent{
+            width:100%;
+            height:700px;
+            display: flex;
+
+            align-items: center;
+            justify-content: space-around;
+            background-color: black;
+        }
+        #parent:hover .card:not(:hover) {
+            opacity: 0.3;
+        }
+        .card{
+            width:200px;
+            height:200px;
+            margin: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            transition: opacity 0.3s ease, background-color 0.3s ease;
+        }
+        #child_1{
+            background-color: yellow;
+        }
+        #child_1:hover{
+            background-color: rgb(242, 242, 153);
+        }
+        #child_2{
+            background-color: violet;
+        }
+        #child_2:hover{
+            background-color: rgb(230, 162, 230);
+        }
+        #child_3{
+            background-color: red;
+        }
+        #child_3:hover{
+            background-color:rgb(251, 112, 112);
+        }
+        #child_4{
+            background-color: green;
+        }
+        #child_4:hover{
+            background-color: rgb(100, 182, 100);
+        }
+
+        h1{
+            color: white;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <h1>Cards</h1>
+        <div id="child_1" class="card"></div>
+        <div id="child_2" class="card"></div>
+        <div id="child_3" class="card"></div>
+        <div id="child_4" class="card"></div>
+    </div>
+</body>
+</html>
