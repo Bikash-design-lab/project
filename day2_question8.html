@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        #parent{
+            width:100%;
+            height: auto;
+            border: 1px solid rgb(245, 243, 243);
+            background: radial-gradient(circle at 50.4% 60.5%, rgb(246, 243, 244) 0%, rgb(238, 5, 63) 90%);
+            
+        }
+        #child{
+            background-color: rgb(238, 236, 236);
+            width:400px;
+            height:590px;
+            margin-bottom: 10px;
+            border: 2px solid black;
+            margin-left: 550px;
+            border-radius: 5px;
+            
+        
+        }
+        button{
+            margin-bottom: 10px;
+            margin-left: 150px;
+            padding: 10px 15px 10px 15px;
+            border:none;
+            font-size: 15px;
+            border-radius: 8px;
+            color: white;
+            background-color: rgb(45, 205, 45);
+        }
+        a{
+            padding-left: 30px ;
+            
+        }
+        p{
+            margin-left:30px;
+        }
+        input[type="text"],input[type="number"]{
+            width:340px;
+            height:20px;
+            border:1px solid rgb(222, 216, 216);
+            box-shadow: inset;
+        }
+        input[type="radio"]{
+            margin-bottom: 15px;
+        }
+        b{
+            
+            padding-left: 25px;
+        }
+        #a1{
+            padding-top: 10px;
+        }
+        sup{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <h1>Feedback Form</h1>
+        <div id="child">
+            <div>
+                <a id="a1">Feedback Type:</a>
+                <p><input type="text" placeholder="Complaint" ></p>
+            </div>
+
+            <div>
+                <a>Message:</a>
+                <p><input type="text" ></p>
+            </div>
+
+            <div class="rating_select">
+                <label for="website_rating"><a>Website Rating:</a><br></label>
+                
+                    <b><input type="radio" id="excellent" name="website_rating"></b>  
+                        <label for="excellent">Excellent</label>  
+                    <b><input type="radio" id="good" name="website_rating"></b>
+                        <label for="good">Good</label>                                  
+                    <b><input type="radio" id="average" name="website_rating"></b>
+                        <label for="average">Average</label>
+                    <b><input type="radio" id="poor" name="website_rating"></b>
+                        <label for="poor">Poor</label>
+            </div>
+
+                     
+            <div>
+                <a>Age(10-100):</a>
+                <p><input type="number" min="10" max="100"></p>
+            </div>
+           
+            <div>
+                <a>Email<sup>*</sup>:</a>
+                <p><input type="text"></p>
+            </div>
+            
+            <div>
+                <a>Password(min. 8 characters):</a>
+                <P><input type="text" min="8" required></P>
+            </div>
+            
+            <div>
+                <a>Website URL(optional):</a>
+                <p><input type="text"></p>
+            </div>
+            <p><input type="radio"> I agree to the terms and conditions</p>
+            <div>
+            <button>Submit</button>
+        </div>
+    </div>
+</body>
+</html>
