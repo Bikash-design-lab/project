@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Masai Navbar</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        nav{
+            width:85%;
+            height:auto;
+            border:1px solid black;
+            display:flex;
+            padding:10px 15px;
+            justify-content: space-around;
+            margin:auto;
+            box-shadow: 2px 1px 0px black;
+            
+        }
+        .left{
+            border:0px solid rgb(102, 0, 255);
+            width:10%;
+            display:flex;
+        }
+        .right{
+            border:0px solid yellow;
+            align-items:ceter;
+            display:flex;
+            width:70%;
+            justify-content: space-around;
+            text-transform: uppercase;
+            align-items: center;
+            font-size: 15px;
+
+        }
+        .left img{
+            border:0px solid black;
+            width:124px;
+            height:44px;
+            display:flex;
+        }
+        div select{
+            font-size: 20px;
+            border: none;
+        }
+        div>button{
+            padding:8px 15px;
+            border-radius: 8px;
+            color: red;
+            border:1.5px solid red;
+            background-color: transparent;
+            &:hover{
+                background-color: rgb(249, 113, 113);
+                color: white;
+
+            }
+        }
+        div p:hover{
+            text-transform:0.3s;
+            cursor:pointer;
+            background-color:rgb(223, 223, 248) ;
+            color: blue;
+           
+        }
+        div p{
+            border: px solid black;
+            padding:8px 15px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="left">
+            <img src="https://cdn.masaischool.com/masai-website/Masai_Logo_dark_web_b21aab8c62.webp" alt="">
+        </div>
+        <div class="right">
+            <select >
+                <option value="">courses</option>
+            </select>
+            <p>fees & isa</p>
+            <p>about us</p>
+            <p>hire from us</p>
+            <p>faq</p>
+            <p>events</p>
+            <p>refer & earn
+                <img width="20px" height="20px" src="https://tse1.mm.bing.net/th?id=OIP.Stq0OHUZEi88X9L6yVSQoAHaJA&pid=Api&P=0&h=180" alt="">
+            </p>
+            <button>Login</button>
+        </div>
+    </nav>
+</body>
+</html>
