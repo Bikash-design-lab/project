@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        *{
+            background-color:aqua;
+            padding: 0%;
+            margin: 0%;
+        }
+        #container{
+            width:2000px;
+            margin:auto;
+            padding:80px;
+            border:0px solid black;
+            display: grid;
+            grid-template-columns: repeat(12,1fr);
+            grid-template-rows: repeat(5,1fr);
+            gap:30px;
+            background-color: rgb(47, 43, 43);
+            border-radius: 50px;
+            margin-top: 100px;
+        }
+        #container div{
+            border:3px solid black;
+            padding: 25px 5px;
+            text-align: center;
+            border-radius: 20px;
+            font-size: 25px;
+            font-weight: bold;
+            color:aqua;
+            background-color: black;
+        }
+        #container #s_2{
+            grid-column: span 2;
+            padding: 0px;
+            padding-top: 20px;
+        }
+        #container #s_4{
+            grid-column: span 4;
+            grid-row:span 1;
+            padding: 0px;
+            padding-top: 20px;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div>~</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>Delete</div>
+        <div>tab</div>
+        <div>Q</div>
+        <div>W</div>
+        <div>E</div>
+        <div>R</div>
+        <div>T</div>
+        <div>Y</div>
+        <div>U</div>
+        <div>I</div>
+        <div>O</div>
+        <div>P</div>
+        <div>\</div>
+        <div>caps</div>
+        <div>A</div>
+        <div>S</div>
+        <div>D</div>
+        <div>F</div>
+        <div>G</div>
+        <div>H</div>
+        <div>J</div>
+        <div>K</div>
+        <div>L</div>
+        <div id="s_2">Enter</div>
+        <div>shift</div>
+        <div>Z</div>
+        <div>X</div>
+        <div>C</div>
+        <div>V</div>
+        <div>B</div>
+        <div>N</div>
+        <div>M</div>
+        <div><</div>
+        <div>></div>
+        <div id="s_2">shift</div>
+        <div>caps lock</div>
+        <div>control</div>
+        <div>option</div>
+        <div>alt</div>
+        <div>num lock</div>
+        <div id="s_4">space</div>
+        <div>alt</div>
+        <div >option</div>
+        <div><~</div>
+        <div>~></div>
+    </div>
+</body>
+</html>
