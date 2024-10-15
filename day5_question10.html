@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Newtan school navbar</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        nav{
+            width:1400px;
+            height:50px;
+            border:1px solid black;
+            display:flex;            
+            color:white;
+            align-items: center;
+            justify-content: space-between;
+            background:linear-gradient(to right, rgb(70, 70, 242), black );
+        }
+        .left{
+            width:10%;
+            border:0px solid red;
+            margin-left: 80px;
+        }
+        .right{
+            width:60%;
+            border:0px solid red;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            font-size: 18px;
+        }
+        select:hover,p:hover{
+            color: yellow;
+            cursor: pointer;
+        }
+        .left img{
+            width:100%;
+            height:100%;
+        }
+        button{
+            font-weight: bold;
+            background-color: rgb(82, 82, 248);
+            color:white;
+            border-radius: 5px;
+            border:none;
+            box-shadow: 1px 1px 4px grey;
+            padding:5px 10px;
+            transform: 0.3s;
+            &:hover{
+                background-color: rgb(64, 64, 200);
+                color:black;
+            }
+        }
+        select{
+            font-size: 18px;
+            background-color:black;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="left">
+            <img src="https://cdn.prod.website-files.com/62e8d2ea218fb7676b6892a6/63a9a311ecd826aa5be44d4e_NS%20Logo%20primary%20white-p-500.png" alt="">
+        </div>
+        <div class="right">
+            <p>Data Science & AI</p>
+            <p>B.Tech in CS & AI<sup>new</sup></p>
+            <p>Newton Edge</p>
+            <p>Refer & Earn</p>
+            <select >
+                <option value="">More</option>
+            </select>
+            <button>Sign up</button>
+
+        </div>
+    </nav>
+</body>
+</html>
