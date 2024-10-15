@@ -1,89 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+    <title>MAsai investers</title>
     <style>
         #container{
-            width:20%;
-            /* border:1px solid red; */
-            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-            grid-template-columns: repeat(4,1fr);
-            grid-template-rows:auto;
-            margin-top:400px;
-            padding:40px;
-            margin: auto;
+            width:1240px;
             display:grid;
-            gap:30px;
-            /* margin-top: auto; */
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: 200px;   
+            margin:auto;
+            gap:15px;
+            padding:20px;        
+            
         }
-        #container > div{
+        #container div{
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            /* padding:20px; */
             text-align: center;
-            padding:20px;
             border-radius: 10px;
-            font-weight: bold;
-            font-size: 30px;
 
         }
-        #display{
-            height:50px;
+        #container div:nth-child(1){
+            grid-column: 1/span 4;
+            display: flex;
         }
-        #container > div:nth-child(1){
-            grid-column: 1/-1;
-
+        div.investers{
+            width:150px;
         }
-        .black{
-            background-color: rgba(0, 0, 0, 0.819);
-            color: white;
-            &:hover{
-                border: 3px solid white;
-                /* cursor: pointer; */
-            }
-        }
-        .red{
-            background-color: red;
-            color: white;
-            &:hover{
-                /* cursor: pointer; */
-                border:3px solid black;
-            }
-        }
-        h1{
+        div ul{
+            list-style-type:none;
             text-align: center;
-            font-size: 80px;
-            color:rgb(13, 147, 147);
         }
-        #container .h:hover{
-            background-color: whitesmoke;
-            /* cursor: pointer; */
+        div li.name{
+            font-size:10x;
+            font-weight: bold;
         }
-
+       
     </style>
 </head>
 <body>
-    <h1>Masai Calculator</h1>
     <div id="container">
-        <div id="display" class="h"></div>
-        <div class="h">1</div>
-        <div class="h">2</div>
-        <div class="h">3</div>
-        <div class="black b">+</div>
-        <div class="h">4</div>
-        <div class="h">5</div>
-        <div class="h">6</div>
-        <div class="black b">-</div>
-        <div class="h">7</div>
-        <div class="h">8</div>
-        <div class="h">9</div>
-        <div class="black b">x</div>
-        <div class="red r">c</div>
-        <div class="h">0</div>
-        <div class="black b">=</div>
-        <div class="black b">/</div>
+        <div id="heading">
+            <p><img src="https://www.masaischool.com/images/our-investors/india-q-borderless.svg" alt=""></p>
+            <p><img src="https://www.masaischool.com/images/our-investors/capria-logo.svg" alt=""></p>
+            <p><img src="https://www.masaischool.com/images/our-investors/omidyar-borderless.svg" alt=""></p>
+        </div>
+
+        <div>
+
+            <img class="investers" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Vijay_Shekhar_Sharma_Paytm_96f52579b8.jpg" alt="">
+            <ul>
+                <li class="name">Vijay_Shekhar_Sharma</li>
+                <li>Founder & CTO</li>
+                <li>LOGO</li>
+            </ul>
+        </div>
+        <div>
+            <img class="investers" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Rectangle_427_637d69bb57.png" alt="">
+            <ul>
+                <li class="name">Vijay_Shekhar_Sharma</li>
+                <li>Founder & CTO</li>
+                <li>LOGO</li>
+            </ul>
+        </div>
+        <div><img class="investers" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Rectangle_427_637d69bb57.png" alt="">
+            <ul>
+                <li class="name">Vijay_Shekhar_Sharma</li>
+                <li>Founder & CTO</li>
+                <li>LOGO</li>
+            </ul>
+        </div>
+        <div><img class="investers" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Sampad_swain_Instamojo_f12bf6341e.jpg" alt="">
+            <ul>
+                <li class="name">Vijay_Shekhar_Sharma</li>
+                <li>Founder & CTO</li>
+                <li>LOGO</li>
+            </ul>
+        </div>
+        <div><img class="investers" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Ankush_Sachdeva_Sharechat_4e44dbbe6b.jpg" alt="">
+            <ul>
+                <li class="name">Vijay_Shekhar_Sharma</li>
+                <li>Founder & CTO</li>
+                <li>LOGO</li>
+            </ul>
+        </div>
+        <div><img class="investers" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/bhanu_pratap_singh_sharechat_11fdd7b47a.jpg" alt="">
+            <ul>
+                <li class="name">Vijay_Shekhar_Sharma</li>
+                <li>Founder & CTO</li>
+                <li>LOGO</li>
+            </ul>
+
+        </div>
+        <div><img class="investers" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/farid_ahsan_sharechat_1251f28141.png" alt="">
+            <ul>
+                <li class="name">Vijay_Shekhar_Sharma</li>
+                <li>Founder & CTO</li>
+                <li>LOGO</li>
+            </ul>
+
+        </div>
+        <div><img class="investers" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Amit_Kumar_Agarwal_Nobroker_a8a279ad91.jpg" alt="">
+            <ul>
+                <li class="name">Vijay_Shekhar_Sharma</li>
+                <li>Founder & CTO</li>
+                <li>LOGO</li>
+            </ul>
+
+        </div>
+        <div><img class="investers" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Akhil_Gupta_Nobroker_539cd97f6c.jpg" alt="">
+            <ul>
+                <li class="name">Vijay_Shekhar_Sharma</li>
+                <li>Founder & CTO</li>
+                <li>LOGO</li>
+            </ul>
+
+        </div>
+        <div><img class="investers" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/saurbh_garg_nobroker_c0c71cc431.jpeg" alt="">
+            <ul>
+                <li class="name">Vijay_Shekhar_Sharma</li>
+                <li>Founder & CTO</li>
+                <li>LOGO</li>
+            </ul>
+
+        </div>
+        <div><img class="investers" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Vipin_Pathak_Care24_acd02cd173.jpg" alt="">
+            <ul>
+                <li class="name">Vijay_Shekhar_Sharma</li>
+                <li>Founder & CTO</li>
+                <li>LOGO</li>
+            </ul>
+
+        </div>
+        <div><img class="investers" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Ramakant_Sharma_livespace_0308e3627d.jpg" alt="">
+            <ul>
+                <li class="name">Vijay_Shekhar_Sharma</li>
+                <li>Founder & CTO</li>
+                <li>LOGO</li>
+            </ul>
+
+        </div>
+        <div><img class="investers" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Mohit_Tandon_Delhivery_b43fee16c4.jpg" alt="">
+            <ul>
+                <li class="name">Vijay_Shekhar_Sharma</li>
+                <li>Founder & CTO</li>
+                <li>LOGO</li>
+            </ul>
+
+        </div>
+        <div><img class="investers" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Abhishek_Goyal_tracxn_5b2f61d87d.jpg" alt="">
+            <ul>
+                <li class="name">Vijay_Shekhar_Sharma</li>
+                <li>Founder & CTO</li>
+                <li>LOGO</li>
+            </ul>
+
+        </div>
+        <div><img class="investers" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Anurag_Jain_Kredx_b6ed6a31c6.jpg" alt="">
+            <ul>
+                <li class="name">Vijay_Shekhar_Sharma</li>
+                <li>Founder & CTO</li>
+                <li>LOGO</li>
+            </ul>
+
+        </div>
+        <div><img class="investers" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Harshvardhan_Lunia_Lendingkart_44d72a6fcd.jpg" alt="">
+            <ul>
+                <li class="name">Vijay_Shekhar_Sharma</li>
+                <li>Founder & CTO</li>
+                <li>LOGO</li>
+            </ul>
+
+        </div>
+        <div><img class="investers" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/sunil_rao_amazon_dfd2daa06d.jpeg" alt="">
+            <ul>
+                <li class="name">Vijay_Shekhar_Sharma</li>
+                <li>Founder & CTO</li>
+                <li>LOGO</li>
+            </ul>
+
+        </div>
+        <div><img class="investers" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Sharda_Balaji_Novojuris_2a206f2f88.jpg" alt="">
+            <ul>
+                <li class="name">Vijay_Shekhar_Sharma</li>
+                <li>Founder & CTO</li>
+                <li>LOGO</li>
+            </ul>
+
+        </div>
+        <div><img class="investers" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Kulin_Shah_Onsurity_0dd3a1802f.jpg" alt="">
+            <ul>
+                <li class="name">Vijay_Shekhar_Sharma</li>
+                <li>Founder & CTO</li>
+                <li>LOGO</li>
+            </ul>
+
+        </div>
     </div>
 </body>
 </html>
-
