@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Grid</title>
+    <style>
+        #container{
+            width:20%;
+            /* border:2px solid red; */
+            margin:auto;
+            display:grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows:auto;
+            gap:20px;
+            padding:20px;
+            
+
+        }
+        #container div{
+            /* border: 2px solid blue; */
+            padding: 30px;
+            text-align: center;
+            color: aliceblue;
+            font-size: 40px;
+            box-shadow: rgba(1, 1, 1, 2.4) 0px 3px 8px;
+
+        }
+        #container div:nth-child(1){
+            background-color: rgb(255, 12, 24);
+        }
+        #container div:nth-child(2){
+            background-color: aqua;
+        }
+        #container div:nth-child(3){
+            background-color: rgb(12, 237, 61);
+        }
+        #container div:nth-child(4){
+            background-color: rgb(237, 96, 9);
+        }
+        #container div:nth-child(5){
+            background-color: rgb(22, 26, 249);
+        }
+        #container div:nth-child(6){
+            background-color: rgb(14, 228, 21);
+        }
+        #container div:nth-child(7){
+            background-color: rgb(220, 19, 193);
+        }
+        #container div:nth-child(8){
+            background-color: rgb(161, 99, 236);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+</body>
+</html>
