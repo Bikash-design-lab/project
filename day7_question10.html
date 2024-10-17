@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        *{
+            border:0;
+            margin:0;
+            padding:0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #container{
+            width:95%;
+            height:auto;
+            margin:auto;
+            display: flex;
+            flex-direction: row;
+        }
+        #footer{
+            width:100%;
+            background-color: rgb(33, 33, 92);
+            color: aliceblue;
+            display: flex;
+            justify-content: space-between;
+            padding:  20px;
+        }
+        #left{
+            display:flex;
+            align-items: center;
+        }
+        #left img{
+            width:20px;
+            height:20px;
+            margin-right: 5px;
+        }
+        #right{
+            display:flex;
+            justify-content: space-between;
+            width: 60%;
+            flex-wrap: wrap;
+        }
+        #right p{
+            margin-left: 0px;
+        }
+        #logo{
+            width:40%;
+            height:400px;
+            background-color: rgb(51, 51, 152);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #logo img{
+            width:80%;
+            height:70%;
+        }
+        #about_me{
+            width:60%;
+            padding: 50px;
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(64, 64, 244);
+        }
+        h2{
+            font-size: 30px;
+            color: aliceblue;
+        }
+        #about_me div p{
+            font-size: 20px;
+            color: white;
+        }
+        @media screen and (max-width:500px){
+            #container{
+                flex-direction: column;
+            }
+            #about_me{
+                flex-direction: column;
+                align-items: center;
+                padding: 20px;
+            }
+            #about_me div{
+                margin-bottom: 20px;
+                text-align: center;
+            }
+            #footer{
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            #right{
+                flex-direction: column;
+                align-items: center;
+            }
+            #right p{
+                margin: 5px 0;
+            }
+        }   
+        @media screen and (min-width:501px) and (max-width:768px){
+            #container{
+                flex-direction: column;
+            }
+            #about_me{
+                flex-direction: column;
+                align-items: center;
+                padding: 30px;
+            }
+            #about_me div{
+                margin-bottom: 20px;
+                text-align: center;
+            }
+            #footer{
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            #right{
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            #right p{
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="logo">
+            <img src="https://cdn.pixabay.com/photo/2014/04/02/10/47/red-304573_960_720.png" alt="">
+        </div>
+        <div id="about_me">
+            <div >
+                <h2>Shop</h2>
+                <p>Git cards</p>
+                <p>Etsy Registry</p>
+                <p>Sitemap</p>
+                <p>Etsy blog</p>
+                <p>Etsy United Kingdom</p>
+                <p>Etsy Germany</p>
+                <p>Etsy Canada</p>
+            </div>
+            <div>
+                <h2>Sell</h2>
+                <p>Sell on Etsy</p>
+                <p>Teams</p>
+                <p>Forums</p>
+                <p>Affiliates & Creators</p>
+            </div>
+            <div>
+                <h2>About</h2>
+                <p>Etsy. Inc.</p>
+                <p>Policies</p>
+                <p>Investors</p>
+                <p>Careers</p>
+                <p>Press</p>
+                <p>Impact</p>
+                <p>Legal Imprint</p>
+            </div>
+            <div>
+                <h2>Shop</h2>
+                <p>Gift Cards</p>
+                <p>Etsy Registry</p>
+                <p>Sitemap</p>
+                <p>Etsy blog</p>
+                <p>Etsy United Kingdom</p>
+                <p>Etsy Germany</p>
+                <p>Etsy Canada</p>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="left">
+            <img src="https://img.freepik.com/premium-vector/india-circle-flag-logo-icon-computer-vector-illustration-design_1143296-2551.jpg?w=740" alt="">India | English(IN) | ₹(INR)
+        </div>
+        <div id="right">
+            <p>@2024 Etsy. Inc</p>
+            <p>Terms of Use</p>
+            <p>Privacy</p>
+            <p>Interest-based ads</p>
+            <p>Local Shops</p>
+            <p>Regions</p>
+        </div>
+    </div>
+</body>
+</html>
