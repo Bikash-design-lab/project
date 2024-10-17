@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Responsiveness</title>
+    <style>
+        *{
+            padding:0px;
+            margin:0px;
+        }
+        #container{
+            width:99%;
+            height:685px;
+            border:2px solid black;
+            margin:auto;
+            position: absolute;
+        }
+        button{
+            position: relative;
+            left:50%;
+            top:50%;
+            padding:15px;
+            border-radius: 10px;
+            color:white;
+            background-color: red;
+            border:none;
+            transition: 0.3s;
+        }
+        button:hover,button:active{
+            background-color: rgba(50, 170, 230, 0.706);
+            border: 3px solid rgb(44, 210, 239);
+            color:black;
+            width:100px;
+            height:80px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <button>Read Info</button>
+    </div>
+</body>
+</html>
