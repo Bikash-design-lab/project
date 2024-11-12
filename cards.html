@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <style>
+        #conatiner{
+            display:grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap:20px;
+        }
+        #conatiner > div{
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            padding:10px;
+        }
+        #container>div>div{
+            display:flex;
+            justify-content: space-around;
+
+        }
+        #container>div>div>p{
+            background-color: red;
+            padding:10px;
+            border-radius: 10px 15px;
+            
+        }
+        @media screen and (min-width:300px) and (max-width:450px){
+
+            #container{
+                grid-template-columns: repeat(1, 1fr);
+                /* grid-template-rows: repeat(3, 1fr); */
+                gap:10px;
+            }
+        }
+        @media screen and (min-width:451px) and (max-width:750px){
+            #container{
+                grid-template-columns: repeat(2, 1fr);
+            /* grid-template-rows: repeat(3, 1fr); */
+            gap:10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="conatiner">
+        <div>
+            <div>
+                <h2>Cappuchino</h2>
+                <p>$49</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet,ucimus accusamus asperiores, odit odio error vitae illo voluptatem ipsam suscipit sequi, cumque aspernatur quo ex, obcaecati itaque corrupti possimus? Perferendis velit fugiat consectetur doloribus?</p>
+        </div>
+        <div>
+            <div>
+                <h2>Cappuchino</h2>
+                <p>$49</p>
+            </div>
+            <p>Lorem ipsum dolor sit ng elit. Provident praesentium ea minus? Deleniti debitis culpa ducimus accusamus asperiores, odit odio error vitae illo voluptatem ipsam suscipit sequi, cumque aspernatur quo ex, obcaecati itaque corrupti possimus? Perferendis velit fugiat consectetur doloribus?</p>
+        </div>
+        <div>
+            <div>
+                <h2>Cappuchino</h2>
+                <p>$49</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident praesentium ea minus? Deleniti debitis culpa ducimus accusamus asperiores, odit odio error vitae illo voluptatem ipsam suscipit sequi, cumque aspernatur quo ex, obcaecati itaque corrupti possimus? Perferendis velit fugiat consectetur doloribus?</p>
+        </div>
+        <div>
+            <div>
+                <h2>Cappuchino</h2>
+                <p>$49</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident praesentium ea minus? Deleniti debitis culpa ducimus accusamus asperiores, odit odio error vitae illo voluptatem ipsam suscipit sequi, cumque aspernatur quo ex, obcaecati itaque corrupti possimus? Perferendis velit fugiat consectetur doloribus?</p>
+        </div>
+        <div>
+            <div>
+                <h2>Cappuchino</h2>
+                <p>$49</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident praesentium ea minus? Deleniti debitis culpa ducimus accusamus asperiores, odit odio error vitae illo voluptatem ipsam suscipit sequi, cumque aspernatur quo ex, obcaecati itaque corrupti possimus? Perferendis velit fugiat consectetur doloribus?</p>
+        </div>
+        <div>
+            <div>
+                <h2>Cappuchino</h2>
+                <p>$49</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident praesentium ea minus? Deleniti debitis culpa ducimus accusamus asperiores, odit odio error vitae illo voluptatem ipsam suscipit sequi, cumque aspernatur quo ex, obcaecati itaque corrupti possimus? Perferendis velit fugiat consectetur doloribus?</p>
+        </div>
+        <div>
+            <div>
+                <h2>Cappuchino</h2>
+                <p>$49</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident praesentium ea minus? Deleniti debitis culpa ducimus accusamus asperiores, odit odio error vitae illo voluptatem ipsam suscipit sequi, cumque aspernatur quo ex, obcaecati itaque corrupti possimus? Perferendis velit fugiat consectetur doloribus?</p>
+        </div>
+        <div>
+            <div>
+                <h2>Cappuchino</h2>
+                <p>$49</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident praesentium ea minus? Deleniti debitis culpa ducimus accusamus asperiores, odit odio error vitae illo voluptatem ipsam suscipit sequi, cumque aspernatur quo ex, obcaecati itaque corrupti possimus? Perferendis velit fugiat consectetur doloribus?</p>
+        </div>
+        <div>
+            <div>
+                <h2>Cappuchino</h2>
+                <p>$49</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident praesentium ea minus? Deleniti debitis culpa ducimus accusamus asperiores, odit odio error vitae illo voluptatem ipsam suscipit sequi, cumque aspernatur quo ex, obcaecati itaque corrupti possimus? Perferendis velit fugiat consectetur doloribus?</p>
+        </div>
+    </div>
+</body>
+</html>

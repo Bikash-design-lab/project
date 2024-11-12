@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>selector</title>
+    <style>
+        /* img[src]{
+            border:3px solid red;
+        } */
+
+        /* 
+        img[src="images/img3.jpg"]{
+            border: 3px solid red;
+        } */
+        
+        /* 
+        attribute start with  image/ "^" helps to select
+        img[src^="images/"]{
+            border:3px solid red;
+        } */
+
+        /* attribute ends with  png "$" helps to select
+        img[src$="png"]{
+            border:3px solid red;
+        } */
+
+        
+
+
+    </style>
+</head>
+<body>
+    <img src="images/img1.jpg" width="200px">
+    <img src="images/img2.png" width="200px">
+    <img src="images/img3.png" width="200px">
+    <img src="img4.jpg" width="200px">
+    <img src="img5.jpg" width="200px">
+    <img width="200px" alt="no src attribute">
+    <img width="200px" alt="no src attribute">
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Notes on selectors</title>
+    <style>
+        div p{
+            margin:10px;
+            float:left;
+            height:200px;
+            width:200px;
+            background-color: rgb(189, 178, 178);
+            text-align: center;
+            font-size: 25px;
+        }
+        .smallCity{
+            clear:left;
+            height:300px;
+        }
+        .largeCity{
+            height:300px;
+        } -->
+        
+        /* class_selector, select only that have class = "city"
+        .city{
+            background-color: yellow; 
+        } */
+
+        /* class_class_selector; select only that have both "city" and "usa" classes
+        .city.usa{
+            background-color: red;
+        } */
+        
+        /* select only that have both "city" and "usa" classes that are parent inside the ".largeCity" div tag
+        .largeCity .city.usa{
+            background-color: red;
+        } */
+
+/* select a single element where id="boston"
+#boston{
+    background-color: red;
+    border: 1px solid yellow;
+} */
+
+/* id_class chils selector
+it selects only that have classes = city, class = india and child of smaller
+#smaller .city.india{
+    background-color: red;
+} */
+
+    
+    /* tag _class compound selector
+    syntax:   tag1.class1 
+    p.city{
+        background-color:red;
+    }*/
+
+    /* Tag_id compound selector
+    syntax:  tagName#id 
+    p#boston{
+        background-color:red;
+    } */
+
+    /* tag_class child_selector
+    selects the elements that have class names "city" and "india"; and 
+    those must be a children of a <div> tag
+    div .city.india{
+        border:3px solid rgb(244, 3, 3);
+    } */
+
+    /* tag tag child selector: selects all instances of <p> that are childre
+    (direct children / grand childres) of <div> tag
+    div p{
+        background-color: red;
+    } 
+    div .city.india{
+        background-color: red;
+    }   */
+
+    /* tag tag child selector: selects all instances of <p> that are children
+    (direct children) of <div> tag (but not grand children)
+    div>p{
+        background-color: red;
+    } */
+
+
+/* grouping selector
+syntax: ,    
+.city.usa,.city.uk{
+    background-color:red;
+} */
+
+/* next sibling selector
+select the <p> tag that has classes "city" and "india" that is present immediately
+after <p> tag with "city" and "uk" classes.    
+syntax: + 
+.city.india + .city.uk{
+    background-color: red;
+} */
+
+/* sibling selector 
+syntax : ~ (say tilled character)
+select all the subsequent <p> tag that has classes "city" and "india" that is present immediately
+after <p> tag with "city" and "uk" classes.    
+.city.india~.city.uk{
+    background-color: red;
+} */
+
+
+
+
+/*     for             line           110               to               216          code                     */
+
+
+
+<!-- 
+    </style>
+</head>
+<body>
+    <div class="largeCity">
+        <p class="city usa">New York</p>
+        <p class="city usa" id="boston">Boston</p>
+        <p class="city india">New Delhi</p>
+        <p class="city india">Goa</p>
+        <p class="city uk">London</p>
+        <p class="city uk">Manchestar</p>
+    </div>
+    <div class="smallCity" id="smaller">
+        <p class="city usa">Anchorage</p>
+        <p class="city usa">Boulder</p>
+        <p class="city india">Vijaywada</p>
+        <p class="city india">pune</p>
+        <b>
+            <p class="city india">Mumbai</p>
+            <p class="city india">Jaipur</p>
+        </b>
+    </div>
+    <p class="city india">Bangalore</p>
+</body>
+</html>  -->

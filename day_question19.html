@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masai in news</title>
+    <style>
+        *{
+            padding:0px;
+            margin:0px;
+        }
+        #container{
+            width:90%;
+            height:700px;
+            margin: auto;
+            border: 3px solid black;
+            gap:20px;
+            padding: 20px;
+        }
+        div,p,#heading{
+            border:3px solid red;
+            text-align: center;
+            height:auto;
+            font-size:40px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        #container div{
+            border: 3px solid green;
+            padding:30px;
+            width:95%;
+            height:400px; 
+        }
+
+        #container #logo{
+            border: 3px solid green;
+            padding:30px;
+            width:95%;
+            height:150px; 
+        }
+        #container #news{
+            display: inline-block;
+            position:relative;
+        }
+        #news > .box{
+            margin-top: 30px;
+            width:200px;
+            height:80px;
+            display: inline-block;
+            
+        }
+        #news + button{
+            position: absolute;
+            bottom:0px;
+            right:300px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <p id="heading">Masai In The News</p>        
+        <div id="news">
+            <div class="box"></div>  <!-- Changed id to class -->
+            <div class="box"></div>  <!-- Changed id to class -->
+            <div class="box"></div>  <!-- Changed id to class -->
+            <button>SEE MORE</button> <!-- Removed <option> -->
+        </div>
+        <div id="logo">
+            <!-- Logo or other content goes here -->
+        </div>
+    </div>
+</body>
+</html>
